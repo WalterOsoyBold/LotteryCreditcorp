@@ -23,20 +23,20 @@ function App() {
         <Route path="unauthorized" element={<Unauthorized />} />
 
         {/* we want to protect these routes */}
-        <Route element={<RequireAuth  />}>
+        <Route >
           <Route path="/" element={<Home />} />
         </Route>
 
-        <Route element={<RequireAuth  />}>
+        <Route >
           <Route path="editor" element={<Editor />} />
         </Route>
 
 
-        <Route element={<RequireAuth  />}>
+        <Route >
           <Route path="admin" element={<Admin />} />
         </Route>
 
-        <Route element={<RequireAuth />}>
+        <Route >
           <Route path="winners" element={<Lounge />} />
         </Route>
 

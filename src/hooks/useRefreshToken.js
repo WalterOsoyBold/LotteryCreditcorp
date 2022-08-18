@@ -6,7 +6,8 @@ const useRefreshToken = () => {
 
     const refresh = async () => {
         const response = await axios.get('/refresh', {
-            withCredentials: true
+            // withCredentials: true
+            withCredentials: false
         });
         setAuth(prev => {
             return { ...prev, accessToken: response.data.accessToken }
