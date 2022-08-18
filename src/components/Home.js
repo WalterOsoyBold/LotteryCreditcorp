@@ -95,7 +95,7 @@ const Home = () => {
                                         <CardActions>
                                             <Button
                                                 size="small"
-                                                onClick={() => { navigate('/winners',{state: {item}}); }}
+                                                onClick={() => { navigate('/winners',{state: item }); }}
                                             >
                                                 Jugar evento
                                             </Button>
